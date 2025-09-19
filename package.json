@@ -1,7 +1,7 @@
 {
   "name": "theme-destroyer",
   "description": "A CLI tool to manage and delete Shopify themes",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "author": "Brydon McCluskey",
   "bin": {
     "themedestroyer": "./bin/run.js"
