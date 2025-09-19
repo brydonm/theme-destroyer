@@ -1,1 +1,1 @@
-{"root":["./src/index.ts","./src/commands/run.ts","./src/commands/store/add.ts","./src/commands/store/list.ts","./src/utils/shopify.ts","./src/utils/storage.ts"],"version":"5.9.2"}
+{"root":["./src/index.ts","./src/commands/run.ts","./src/commands/store/add.ts","./src/commands/store/list.ts","./src/commands/store/remove.ts","./src/utils/shopify.ts","./src/utils/storage.ts"],"version":"5.9.2"}

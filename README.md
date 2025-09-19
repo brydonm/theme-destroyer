@@ -46,6 +46,18 @@ View all your stored stores:
 themedestroyer store list
 ```
 
+### Removing a Store
+
+Remove a store from your configuration:
+
+```bash
+# Remove specific store
+themedestroyer store remove davidprotein-dev
+
+# Interactive store selection
+themedestroyer store remove
+```
+
 ### Deleting Themes
 
 Run the main command to fetch and delete themes:
@@ -63,6 +75,7 @@ themedestroyer
 * [`themedestroyer run`](#themedestroyer-run) - Fetch themes from Shopify and delete selected ones
 * [`themedestroyer store add STORE`](#themedestroyer-store-add-store) - Add a new Shopify store and API token
 * [`themedestroyer store list`](#themedestroyer-store-list) - List all stored Shopify stores and their API tokens (masked)
+* [`themedestroyer store remove [STORE]`](#themedestroyer-store-remove-store) - Remove a Shopify store from storage
 
 ## `themedestroyer run`
 
@@ -118,6 +131,25 @@ DESCRIPTION
 
 EXAMPLES
   $ themedestroyer store list
+```
+
+## `themedestroyer store remove [STORE]`
+
+Remove a Shopify store from storage
+
+```
+USAGE
+  $ themedestroyer store remove [STORE]
+
+ARGUMENTS
+  STORE  Store name to remove (if not provided, will show selection)
+
+DESCRIPTION
+  Remove a Shopify store from storage
+
+EXAMPLES
+  $ themedestroyer store remove davidprotein-dev
+  $ themedestroyer store remove
 ```
 
 ## Security
