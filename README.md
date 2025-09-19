@@ -14,6 +14,7 @@ Theme Destroyer 3000 is a powerful CLI tool that helps you manage Shopify stores
 
 - 🔐 **Secure Store Management** - Add and manage multiple Shopify stores with encrypted API token storage
 - 🎯 **Interactive Theme Selection** - Use checkboxes to select which themes to delete
+- 🔍 **Theme Search & Delete** - Search for themes by keyword and optionally delete them
 - 🛡️ **Safe Deletion** - Confirmation prompts before deleting themes
 - 📋 **Store Listing** - View all your stores with masked API tokens for security
 - ⚡ **Fast & Reliable** - Direct Shopify API integration for quick operations
@@ -58,6 +59,18 @@ themedestroyer store remove davidprotein-dev
 themedestroyer store remove
 ```
 
+### Searching and Deleting Themes
+
+Search for themes by keyword and optionally delete them:
+
+```bash
+# Search themes with keyword and choose to delete
+themedestroyer store search "dark"
+
+# Search in specific store
+themedestroyer store search "theme" --store davidprotein-dev
+```
+
 ### Deleting Themes
 
 Run the main command to fetch and delete themes:
@@ -76,6 +89,7 @@ themedestroyer
 * [`themedestroyer store add STORE`](#themedestroyer-store-add-store) - Add a new Shopify store and API token
 * [`themedestroyer store list`](#themedestroyer-store-list) - List all stored Shopify stores and their API tokens (masked)
 * [`themedestroyer store remove [STORE]`](#themedestroyer-store-remove-store) - Remove a Shopify store from storage
+* [`themedestroyer store search KEYWORD`](#themedestroyer-store-search-keyword) - Search for themes by keyword and optionally delete them
 
 ## `themedestroyer run`
 
@@ -150,6 +164,28 @@ DESCRIPTION
 EXAMPLES
   $ themedestroyer store remove davidprotein-dev
   $ themedestroyer store remove
+```
+
+## `themedestroyer store search KEYWORD`
+
+Search for themes by keyword and optionally delete them
+
+```
+USAGE
+  $ themedestroyer store search KEYWORD [-s <value>]
+
+ARGUMENTS
+  KEYWORD  Keyword to search for in theme names
+
+FLAGS
+  -s, --store=<value>  Store name to search themes in
+
+DESCRIPTION
+  Search for themes by keyword and optionally delete them
+
+EXAMPLES
+  $ themedestroyer store search "dark"
+  $ themedestroyer store search "theme" --store davidprotein-dev
 ```
 
 ## Security
