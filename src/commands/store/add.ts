@@ -6,13 +6,13 @@ export default class StoreAdd extends Command {
   static description = 'Add a new Shopify store and API token';
 
   static examples = [
-    '<%= config.bin %> store add davidprotein-dev',
-    '<%= config.bin %> store add davidprotein-dev --token shpat_abc123...',
+    '<%= config.bin %> store add store-name',
+    '<%= config.bin %> store add store-name --token shpat_abc123...',
   ];
 
   static args = {
     store: Args.string({
-      description: 'Store name (e.g., davidprotein-dev)',
+      description: 'Store name (e.g., store-name)',
       required: true,
     }),
   };

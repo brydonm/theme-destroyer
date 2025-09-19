@@ -1,12 +1,12 @@
 {
-  "name": "theme-destroyer-3000",
+  "name": "theme-destroyer",
   "description": "A CLI tool to manage and delete Shopify themes",
   "version": "0.0.0",
   "author": "Brydon McCluskey",
   "bin": {
     "themedestroyer": "./bin/run.js"
   },
-  "bugs": "https://github.com/brydonm/theme-destroyer-3000/issues",
+  "bugs": "https://github.com/brydonm/theme-destroyer/issues",
   "dependencies": {
     "@oclif/core": "^4",
     "@oclif/plugin-help": "^6",
@@ -41,7 +41,7 @@
     "./dist",
     "./oclif.manifest.json"
   ],
-  "homepage": "https://github.com/brydonm/theme-destroyer-3000",
+  "homepage": "https://github.com/brydonm/theme-destroyer",
   "keywords": [
     "shopify",
     "themes",
@@ -66,7 +66,7 @@
     },
     "default": "run"
   },
-  "repository": "brydonm/theme-destroyer-3000",
+  "repository": "brydonm/theme-destroyer",
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
     "lint": "eslint",

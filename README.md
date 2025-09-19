@@ -1,14 +1,14 @@
-# theme-destroyer-3000
+# theme-destroyer (previously theme-destroyer-3000)
 
 A CLI tool to manage and delete Shopify themes
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/theme-destroyer-3000.svg)](https://npmjs.org/package/theme-destroyer-3000)
-[![Downloads/week](https://img.shields.io/npm/dw/theme-destroyer-3000.svg)](https://npmjs.org/package/theme-destroyer-3000)
+[![Version](https://img.shields.io/npm/v/theme-destroyer.svg)](https://npmjs.org/package/theme-destroyer)
+[![Downloads/week](https://img.shields.io/npm/dw/theme-destroyer.svg)](https://npmjs.org/package/theme-destroyer)
 
 ## Overview
 
-Theme Destroyer 3000 is a powerful CLI tool that helps you manage Shopify stores and safely delete unwanted themes. It provides an interactive interface for selecting and removing themes from your Shopify stores.
+Theme Destroyer is a powerful CLI tool that helps you manage Shopify stores and safely delete unwanted themes. It provides an interactive interface for selecting and removing themes from your Shopify stores.
 
 ## Features
 
@@ -22,7 +22,7 @@ Theme Destroyer 3000 is a powerful CLI tool that helps you manage Shopify stores
 ## Installation
 
 ```bash
-npm install -g theme-destroyer-3000
+npm install -g theme-destroyer
 ```
 
 ## Usage
@@ -33,10 +33,10 @@ Add a new Shopify store to manage:
 
 ```bash
 # Add store with interactive token prompt
-themedestroyer store add davidprotein-dev
+themedestroyer store add store-name
 
 # Add store with token flag
-themedestroyer store add davidprotein-dev -t shpat_your_token_here
+themedestroyer store add store-name -t shpat_your_token_here
 ```
 
 ### Listing Stores
@@ -53,7 +53,7 @@ Remove a store from your configuration:
 
 ```bash
 # Remove specific store
-themedestroyer store remove davidprotein-dev
+themedestroyer store remove store-name
 
 # Interactive store selection
 themedestroyer store remove
@@ -68,7 +68,7 @@ Search for themes by keyword and optionally delete them:
 themedestroyer store search "dark"
 
 # Search in specific store
-themedestroyer store search "theme" --store davidprotein-dev
+themedestroyer store search "theme" --store store-name
 ```
 
 ### Deleting Themes
@@ -107,7 +107,7 @@ DESCRIPTION
 
 EXAMPLES
   $ themedestroyer run
-  $ themedestroyer run --store davidprotein-dev
+  $ themedestroyer run --store store-name
 ```
 
 ## `themedestroyer store add STORE`
@@ -119,7 +119,7 @@ USAGE
   $ themedestroyer store add STORE [-t <value>]
 
 ARGUMENTS
-  STORE  Store name (e.g., davidprotein-dev)
+  STORE  Store name (e.g., store-name)
 
 FLAGS
   -t, --token=<value>  API token (if not provided, will be prompted)
@@ -128,8 +128,8 @@ DESCRIPTION
   Add a new Shopify store and API token
 
 EXAMPLES
-  $ themedestroyer store add davidprotein-dev
-  $ themedestroyer store add davidprotein-dev --token shpat_abc123...
+  $ themedestroyer store add store-name
+  $ themedestroyer store add store-name --token shpat_abc123...
 ```
 
 ## `themedestroyer store list`
@@ -162,7 +162,7 @@ DESCRIPTION
   Remove a Shopify store from storage
 
 EXAMPLES
-  $ themedestroyer store remove davidprotein-dev
+  $ themedestroyer store remove store-name
   $ themedestroyer store remove
 ```
 
@@ -185,7 +185,7 @@ DESCRIPTION
 
 EXAMPLES
   $ themedestroyer store search "dark"
-  $ themedestroyer store search "theme" --store davidprotein-dev
+  $ themedestroyer store search "theme" --store store-name
 ```
 
 ## Security

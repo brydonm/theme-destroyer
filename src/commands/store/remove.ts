@@ -6,7 +6,7 @@ export default class StoreRemove extends Command {
   static description = 'Remove a Shopify store from storage';
 
   static examples = [
-    '<%= config.bin %> store remove davidprotein-dev',
+    '<%= config.bin %> store remove store-name',
     '<%= config.bin %> store remove',
   ];
 

@@ -8,7 +8,7 @@ export default class Index extends Command {
 
   static examples = [
     '<%= config.bin %>',
-    '<%= config.bin %> --store davidprotein-dev',
+    '<%= config.bin %> --store store-name',
   ];
 
   static flags = {
